@@ -9,7 +9,7 @@ Built with node.js, Express.js and HTML5 and some other libraries to add more fu
 - jsonwebtoken: for user authentication
 
 
-## Want a try?
+## Wanna a try?
 1. npm install (in terminal) to download all necessary library
 2. get mongodb url (recommend mongodb Atlas)
 3. npm start (in terminal) to start backend
