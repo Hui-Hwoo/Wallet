@@ -21,8 +21,9 @@
             <h2>Register</h2>
         </div>
         <div class="center-content">
-            <form action="/users/register" method="post">
+            <form action="javascript:void(0);" method="post">
                 <input
+                    id="reg-email"
                     type="text"
                     name="email"
                     value=""
@@ -30,22 +31,28 @@
                 />
                 <br />
                 <input
-                    type="password"
+                    id="reg-passward1"
+                    type="text"
                     name="password"
                     value=""
                     placeholder="Enter Password"
                 />
                 <br />
                 <input
-                    type="password"
+                    id="reg-passward2"
+                    type="text"
                     name="password2"
                     value=""
                     placeholder="Confirm Password"
                 />
                 <br />
-                <input type="submit" name="" value="Register" />
+                <input type="submit" name="" value="Register" id="signup" />
             </form>
-            <div>if you have account, <a class="highlight" href="../pages/login.html" >Log in !</a></div>
+            <div>
+                if you have account,
+                <a class="highlight" href="../pages/login.html">Log in !</a>
+            </div>
         </div>
+        <script src="../scripts/signup.js"></script>
     </body>
 </html>

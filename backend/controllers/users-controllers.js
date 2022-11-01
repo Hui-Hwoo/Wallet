@@ -54,7 +54,7 @@ const signup = async (req, res, next) => {
         const credential = { userId: newUser._id, email: newUser.email };
 
         const token = jwt.sign(credential, "supersecret_dont_share", {
-            expiresIn: "1h",
+            expiresIn: "24h",
         });
 
         res.status(201).json({
@@ -101,7 +101,7 @@ const login = async (req, res, next) => {
                 const token = jwt.sign(
                     { userId: existingUser._id, email: existingUser.email },
                     "supersecret_dont_share",
-                    { expiresIn: "1h" }
+                    { expiresIn: "24h" }
                 );
 
                 res.status(200).json({

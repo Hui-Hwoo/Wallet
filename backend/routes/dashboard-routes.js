@@ -4,7 +4,7 @@ const checkAuth = require("../middleware/check_auth");
 
 const router = express.Router();
 
-router.use(checkAuth);
-router.get("/", dashboardController.getDashBoard);
+// router.use(checkAuth);
+router.post("/", dashboardController.getDashBoard);
 
 module.exports = router;

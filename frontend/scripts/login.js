@@ -14,24 +14,6 @@ const getUsers = async (event, test) => {
     console.log(elementname.textContent);
 };
 
-const signup = async (event) => {
-    event.preventDefault();
-    try {
-        const response = await fetch("http://localhost:3000/users/signup", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                name: "testJS",
-                email: "testJS@gmail.com",
-                password: "123456",
-            }),
-        });
-        const responseData = await response.json();
-        console.log(responseData);
-    } catch (error) {
-        console.log(error);
-    }
-};
 
 const login = async (event) => {
     const email = document.getElementById("email").value;
@@ -60,4 +42,6 @@ const login = async (event) => {
     }
 };
 
+
 document.getElementById("login").addEventListener("click", login);
+
