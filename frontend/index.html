@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/index.css" />
+        <!-- <script src="./scripts/changecolor.js"></script> -->
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <p id="test" class="elementname">freeCodeCamp</p>
+            <button id="btn">Change Color</button>
+        </div>
+        <script>
+            const elementname = document.querySelector("#test");
+            const btn = document.querySelector("#btn");
+
+            const changeColor = async (event) => {
+                event.preventDefault();
+                try {
+                    const response = await fetch("http://localhost:3000/users");
+                    const responseData = await response.json();
+                    if (!response.ok) {
+                        throw new Error(responseData.message);
+                    }
+                    console.log(responseData);
+                    window.localStorage.setItem("token", responseData.token);
+                } catch (error) {
+                    console.log(error);
+                }
+
+                console.log(elementname.textContent);
+                elementname.style.color = "blue";
+            };
+            btn.addEventListener("click", changeColor);
+        </script>
+    </body>
+</html>
