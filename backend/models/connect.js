@@ -2,9 +2,8 @@ const { MongoClient } = require("mongodb");
 const HttpError = require("./http-error");
 
 // basic information about mongoDB
-const url =
-    "mongodb+srv://root:DB123456@mern.vzfjptn.mongodb.net/wallet?retryWrites=true&w=majority";
-const dbName = "wallet";
+const url = "to be added";
+const dbName = "to be added";
 
 // connect to MongoDB accoring to provided database name
 async function connectDB() {
