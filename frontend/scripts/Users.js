@@ -1,4 +1,4 @@
-const getUsers = async (event) => {
+const getUsers = async (event, test) => {
     event.preventDefault();
     try {
         const response = await fetch("http://localhost:3000/users");
@@ -33,28 +33,6 @@ const signup = async (event) => {
     }
 };
 
-// const { notify } = require("../../routes");
-
-// var username = document.getElementById("username");
-// var password = document.getElementById("password");
-
-// async function postLogin(event) {
-//     const response = await fetch("/users/login", {
-//         body: `username=${urlescape(username.value)}&password=${urlescape(
-//             password.value
-//         )}`,
-//         headers: {
-//             "Content-Type": "application/x-www-form-urlencoded",
-//         },
-//         method: "post",
-//     });
-//     if (response.status === 200) {
-//         window.url = "http://localhost:3001/";
-//     }
-// }
-
-// window.onload = getUsers;
-
 const login = async (event) => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
@@ -75,7 +53,7 @@ const login = async (event) => {
             console.log(responseData);
             window.localStorage.setItem("token", responseData.token);
             window.localStorage.setItem("userId", responseData.userId);
-            window.location.pathname = "frontend/dashboard.html";
+            window.location.pathname = "../frontend/pages/dashboard.html";
         }
     } catch (error) {
         console.log(error);

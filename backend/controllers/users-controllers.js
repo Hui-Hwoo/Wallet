@@ -45,10 +45,8 @@ const signup = async (req, res, next) => {
             name,
             email,
             password: hashedPassword,
-            budget: {
-                month: 0,
-                year: 0,
-            },
+            budget: 0,
+            goal: "Saving",
         };
 
         await User.insertOne(newUser);

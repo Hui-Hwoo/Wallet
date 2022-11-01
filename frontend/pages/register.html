@@ -13,8 +13,7 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Caveat"
         />
-        <!-- <link rel="stylesheet" href="stylesheets/style.css" /> -->
-        <link rel="stylesheet" href="stylesheets/login.css" />
+        <link rel="stylesheet" href="../styles/login.css" />
     </head>
 
     <body>
@@ -25,9 +24,9 @@
             <form action="/users/register" method="post">
                 <input
                     type="text"
-                    name="username"
+                    name="email"
                     value=""
-                    placeholder="Enter Username"
+                    placeholder="Enter Email"
                 />
                 <br />
                 <input
@@ -46,7 +45,7 @@
                 <br />
                 <input type="submit" name="" value="Register" />
             </form>
-            <div>if you have account, you can <a href="/login">Log in</a>!</div>
+            <div>if you have account, <a class="highlight" href="../pages/login.html" >Log in !</a></div>
         </div>
     </body>
 </html>

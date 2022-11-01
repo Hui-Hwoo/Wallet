@@ -21,12 +21,12 @@ function closeSidebar() {
 
 // category pie chart
 var options = {
-    series: [44, 55, 13, 43, 22],
+    series: [44, 55, 13, 43, 22, 100],
     chart: {
         width: 380,
         type: "pie",
     },
-    labels: ["Rent", "Transaportation", "Learning", "Appearance", "Food"],
+    labels: ["Appearance", "Food", "Learning", "Other", "Rent", "Transaportation"],
     responsive: [
         {
             breakpoint: 480,

@@ -6,9 +6,7 @@ const router = express.Router();
 
 router.use(checkAuth);
 
-router.get("/me", expensesControllers.getLoggedInUserExpenses);
-
-router.get("/:eid", expensesControllers.getExpenseById);
+router.get("/id/:eid", expensesControllers.getExpenseById);
 
 router.get("/user/:uid", expensesControllers.getExpensesByUserId);
 

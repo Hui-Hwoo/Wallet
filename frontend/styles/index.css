@@ -1,0 +1,35 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-center {
+    text-align: center; 
+}
+
+.btn {
+    margin-top: 10%;
+    border: none;
+    background: none;
+    color: red;
+    font-size: 160px;
+    border-radius: 8px;
+    font-family: 'Caveat Brush';
+}
+
+.btn:hover {
+    color: yellow;
+    font-size: 160px;
+}
+
+#btn-login {
+    margin-right: 100px;
+}
+
+#btn-register {
+    margin-left: 100px;
+}
+
+
+

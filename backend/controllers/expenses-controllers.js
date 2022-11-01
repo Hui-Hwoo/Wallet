@@ -77,7 +77,7 @@ const createExpense = async (req, res, next) => {
         _id: uuid(),
         amount,
         description,
-        date,
+        date: new Date(date),
         category,
         creator,
     };
@@ -133,7 +133,7 @@ const updateExpense = async (req, res, next) => {
             creator: existingExpense.creator,
             amount,
             description,
-            date,
+            date: new Date(date),
             category,
         };
 
