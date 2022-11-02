@@ -38,3 +38,12 @@ https://docs.google.com/presentation/d/1f0qcLbI5bNLf0m7c5FcMWldd6m-4J8LSj9eHIxce
 
 
 Created by Lingyi Zheng, Hui Hu
+
+# Code Review by Mihir Mesia
+Good job on your project! I tried running it but had issues with it! Below are some of the issues I found in your code
+1. You have used Mongoose, though it was not allowed to use it.
+2. express.static was missing in the app.js, so your frontend was not rendering.
+3. The file structure was not as per shown by the professor.
+
+Overall, great effor guys!!!
+
