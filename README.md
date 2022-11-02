@@ -38,3 +38,11 @@ https://docs.google.com/presentation/d/1f0qcLbI5bNLf0m7c5FcMWldd6m-4J8LSj9eHIxce
 
 
 Created by Lingyi Zheng, Hui Hu
+
+
+# Code Review by Harshit Gajjar
+Great Job on your application!! I tried running the application but had found issues with it.
+The instructions given to run the app on readme didn't work. 
+I think all the points from canvas rubric are not covered expecially with folder structure. I tried modifying the code a little to make it run but i was getting errors on create account page.
+
+Overall, hats off for all your efforts on the project.
